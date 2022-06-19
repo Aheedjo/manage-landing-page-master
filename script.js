@@ -59,9 +59,6 @@ const validateEmail = (e) => {
 
 const toggleMenu = () => {
     mobileMenu.classList.toggle("show");
-    // console.log(mobileMenu.classList)
-    // console.log(mobileMenu)
-    // console.log("k")
 }
 
 
