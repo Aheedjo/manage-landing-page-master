@@ -1,0 +1,38 @@
+@import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
+.cta {
+    background-color: $Bright_Red;
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -1300% center;
+    .container {
+        @include flex;
+        padding: 64px 0;
+        h2 {
+            max-width: 482px;
+            color: $Vary_Light_Gray;
+            margin-bottom: 0;
+        }
+        #btn {
+            background-color: $Vary_Light_Gray;
+            color: $Bright_Red;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .cta {
+        text-align: center;
+        background-image: url("../images/bg-simplify-section-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: left center;
+        .container {
+            flex-direction: column;
+            padding: 90px 0;
+            h2 {
+                max-width: 250px;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "../variables/variables.scss";
+.bg {
+    width: 845px;
+    height: 435px;
+    border-radius: 300px 0 0 300px;
+    background-color: $Very_Pale_Red;
+    z-index: -2;
+    position: absolute;
+}
+
+#bg1 {
+    right: -150px;
+    top: -0px;
+    transform: rotate(-45deg);
+}
+
+#bg2 {
+    top: 1250px;
+    left: -350px;
+    transform: rotate(-225deg);
+}
+
+@media screen and(max-width: 375px) {
+    .bg {
+        border-radius: 300px 0 0 300px;
+        background-color: $Very_Pale_Red;
+    }
+    #bg1 {
+        width: 415px;
+        height: 244px;
+        right: -100px;
+        top: 0px;
+        transform: rotate(-45deg);
+        z-index: -2;
+    }
+    #bg2 {
+        width: 235px;
+        height: 170px;
+        top: 620px;
+        left: 250px;
+        transform: rotate(-45deg);
+    }
+}

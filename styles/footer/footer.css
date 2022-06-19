@@ -1,0 +1,232 @@
+.footer {
+  background-color: #1d1e25;
+  padding: 60px 0;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 130px;
+}
+
+.footer .container > div .logo_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 80px;
+}
+
+.footer .container > div .logo_social .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+
+.footer .container > div .logo_social .socials span {
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.footer .container > div .logo_social .socials span path:hover {
+  fill: #f25f3a;
+}
+
+.footer .container > div .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 150px;
+}
+
+.footer .container > div .links li {
+  margin-bottom: 25px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.footer .container > div .links li a {
+  color: #fafafa;
+}
+
+.footer .container > div .links li a:hover {
+  color: #f25f3a;
+}
+
+.footer .container .form_copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 60px;
+}
+
+.footer .container .form_copyright .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7px;
+}
+
+.footer .container .form_copyright .form > div {
+  margin-right: 7px;
+}
+
+.footer .container .form_copyright .form > div input {
+  padding: 1em 1.2em;
+  height: 41.66;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.footer .container .form_copyright .form > div span {
+  display: block;
+  font-size: 0.625em;
+  color: red;
+  padding-left: 1em;
+  padding-top: 0.625em;
+}
+
+.footer .container .form_copyright .form #btn {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.footer .container .form_copyright .form :-ms-input-placeholder {
+  color: #fafafa;
+}
+
+.footer .container .form_copyright #copyright {
+  font-size: 0.75em;
+}
+
+.footer .copyright2 {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    padding: 50px 0;
+  }
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer .container > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .footer .container > div .logo_social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 55px;
+  }
+  .footer .container > div .logo_social .socials {
+    gap: 35px;
+  }
+  .footer .container > div .links {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 105px;
+  }
+  .footer .container > div .links li {
+    margin-bottom: 15px;
+  }
+  .footer .container .form_copyright {
+    gap: 50px;
+  }
+  .footer .container .form_copyright #copyright {
+    display: none;
+  }
+  .footer .copyright2 {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,14 @@
+@import "./variables/variables.scss";
+@import "./header/header.scss";
+@import "./difference/difference.scss";
+@import "./testimonials/testimonials.scss";
+@import "./cta/cta.scss";
+@import "./footer/footer.scss";
+@import "./reset/reset.scss";
+@import "./mixins/mixins.scss";
+@import "./backgrounds/background.scss";
+.container {
+    width: 90%;
+    max-width: 1110px;
+    margin: 0 auto;
+}

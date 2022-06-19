@@ -1,0 +1,70 @@
+.difference .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 150px;
+}
+
+.difference .container .header p {
+  margin-top: 30px;
+}
+
+.difference .container .difference_text > div {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 30px;
+}
+
+.difference .container .difference_text > div #btn {
+  padding: 10px 24px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media screen and (max-width: 375px) {
+  .difference .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 60px;
+  }
+  .difference .container p {
+    margin-top: 25px;
+  }
+  .difference .container .header {
+    text-align: center;
+  }
+  .difference .container .difference_text > div {
+    margin-bottom: 50px;
+    gap: 0px;
+  }
+  .difference .container .difference_text > div h3 {
+    background-color: #ffefeb;
+    padding: 10.5px 15px;
+  }
+}
+/*# sourceMappingURL=difference.css.map */

@@ -1,0 +1,66 @@
+@import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
+.testimonials {
+    text-align: center;
+    -ms-overflow-style: none;
+    .testimonials_wrapper {
+        width: 100%;
+        display: inline-flex;
+        gap: 30px;
+        padding: 100px 0 50px 0;
+        overflow-x: scroll;
+        user-select: none;
+        will-change: transform;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        div {
+            white-space: wrap;
+            min-width: 540px;
+            height: 220px;
+            padding: 60px 35px 45px 35px;
+            background-color: $Vary_Light_Gray;
+            position: relative;
+            img {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 70px;
+            }
+        }
+    }
+    .options {
+        @include flex;
+        justify-content: center;
+        gap: 3px;
+        .option {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            border: 1px solid $Bright_Red;
+            cursor: pointer;
+        }
+        .active {
+            background: $Bright_Red;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .testimonials {
+        .testimonials_wrapper {
+            width: 100%;
+            display: inline-flex;
+            gap: 30px;
+            div {
+                .name {
+                    font-size: 1em;
+                }
+                min-width: 90%;
+                margin: 0 5%;
+                height: 220px;
+                padding: 60px 15px 180px 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
+.header {
+    .nav {
+        @include flex;
+        margin: 50px 0;
+        .links {
+            @include flex;
+            gap: 30px;
+        }
+        #hamburger {
+            display: none;
+        }
+    }
+    .hero {
+        @include flex;
+        margin-top: 100px;
+        .text {
+            @include flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 35px;
+            p {
+                max-width: 350px;
+            }
+        }
+    }
+}
+
+.mobile_menu_container {
+    visibility: hidden;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: -40px;
+    left: 0;
+    .mobile_menu {
+        position: absolute;
+        top: 100px;
+        left: 5%;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 35px 0;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        .link {
+            margin-bottom: 30px;
+            a {
+                color: $Dark_Blue;
+                font-size: 1em;
+                font-weight: 700;
+            }
+        }
+        li:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.show {
+    visibility: visible;
+}
+
+@media screen and (max-width: 375px) {
+    .header {
+        .nav {
+            margin: 40px 0;
+            .links,
+            #btn {
+                display: none;
+            }
+            #hamburger {
+                display: block;
+                z-index: 10;
+                cursor: pointer;
+            }
+        }
+        .hero {
+            margin-top: 50px;
+            flex-direction: column-reverse;
+            gap: 30px;
+            text-align: center;
+            .text {
+                gap: 10px;
+                align-items: center;
+                #btn {
+                    margin-top: 20px;
+                }
+                p {
+                    font-size: 1em;
+                }
+            }
+            #img {
+                width: 100%;
+            }
+        }
+    }
+}

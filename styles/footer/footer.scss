@@ -1,0 +1,132 @@
+@import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
+.footer {
+    background-color: $Very_Dark_Blue;
+    padding: 60px 0;
+    .container {
+        @include flex;
+        >div {
+            @include flex;
+            gap: 130px;
+            .logo_social {
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                justify-content: space-between;
+                gap: 80px;
+                .socials {
+                    @include flex;
+                    gap: 15px;
+                    span {
+                        cursor: pointer;
+                        transition: .3s ease;
+                    }
+                    span path:hover {
+                        fill: $Bright_Red;
+                    }
+                }
+            }
+            .links {
+                display: flex;
+                align-items: baseline;
+                justify-content: center;
+                gap: 150px;
+                li {
+                    margin-bottom: 25px;
+                    transition: .3s ease;
+                }
+                li a {
+                    color: $Vary_Light_Gray;
+                }
+                li a:hover {
+                    color: $Bright_Red;
+                }
+            }
+        }
+        .form_copyright {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 60px;
+            .form {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 7px;
+                >div {
+                    margin-right: 7px;
+                    input {
+                        padding: 1em 1.2em;
+                        height: 41.66;
+                        border-radius: 20px;
+                        outline: none;
+                        border: none;
+                    }
+                    span {
+                        display: block;
+                        font-size: 0.625em;
+                        color: red;
+                        padding-left: 1em;
+                        padding-top: 0.625em;
+                    }
+                }
+                #btn {
+                    box-shadow: none;
+                }
+                 :-ms-input-placeholder {
+                    color: $Vary_Light_Gray;
+                }
+            }
+            #copyright {
+                font-size: 0.75em;
+            }
+        }
+    }
+    .copyright2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+        padding: 50px 0;
+        .container {
+            @include flex;
+            flex-direction: column-reverse;
+            >div {
+                flex-direction: column-reverse;
+                gap: 50px;
+                width: fit-content;
+                margin: auto;
+                .logo_social {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    gap: 55px;
+                    .socials {
+                        gap: 35px;
+                    }
+                }
+                .links {
+                    align-items: baseline;
+                    justify-content: center;
+                    gap: 105px;
+                    li {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .form_copyright {
+                gap: 50px;
+                #copyright {
+                    display: none;
+                }
+            }
+        }
+        .copyright2 {
+            display: block;
+            text-align: center;
+            margin-top: 60px;
+        }
+    }
+}
